@@ -1,28 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="container bg-light border border-light rounded shadow my-3">
+      <div id="main-content d-flex flex-column justify-content-center align-items-center">
+        <div class="p-3">
+          <nav class="nav bg-dark nav-pills nav-justified">
+            <router-link to="/" class="nav-item nav-link" active-class="active" exact>Jobs</router-link>
+            <router-link to="/saved" class="nav-item nav-link" active-class="active">Saved</router-link>
+            <router-link to="/alerts" class="nav-item nav-link" active-class="active">Alerts</router-link>
+          </nav>
+          <JobFilter />
+          <router-view></router-view>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import JobFilter from './components/JobFilter.vue';
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    JobFilter,
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+.container {
+  width: 75%;
 }
 </style>
