@@ -9,6 +9,7 @@ Vue.use(VueRouter);
 
 export const router = new VueRouter({
   mode: 'history',
+  base: '/vue-google-jobs-board/',
   routes: [
     {
       name: 'jobs',
