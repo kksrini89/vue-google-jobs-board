@@ -1,24 +1,7 @@
-# google-jobs-board
+# Google Jobs Board
 
-## Project setup
-```
-npm install
-```
+> This application enables us to search various available job positions.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+![Jobs Board](/screenshots/Result.png)
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
